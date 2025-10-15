@@ -26,3 +26,8 @@ spec:
   install:
     remediation:
       retries: 3
+  values:
+    server:
+      ha:
+        enabled: true
+        replicas: 3

@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: slack-bot
+spec:
+  type: slack
+  channel: flux-test
+  address: https://slack.com/api/chat.postMessage
+  secretRef:
+    name: slack-token

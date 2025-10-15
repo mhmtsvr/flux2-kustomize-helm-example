@@ -10,7 +10,7 @@ spec:
   timeout: 5m
   sourceRef:
     kind: GitRepository
-    name: kube-system
+    name: flux-system
   path: ./infrastructure/metrics-server
   prune: true
   wait: true
